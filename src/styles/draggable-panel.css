@@ -1,0 +1,30 @@
+.draggable-container {
+  min-height: 300px;
+  width: 65%;
+  height: 65%;
+}
+
+.draggable-content {
+  overflow: auto;
+  height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

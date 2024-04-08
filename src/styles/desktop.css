@@ -1,0 +1,6 @@
+.desktop-bg {
+  background-image: url('../assets/wallpaper.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

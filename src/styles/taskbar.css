@@ -1,0 +1,21 @@
+.taskbar-icon {
+  background-position: center;
+  background-size: cover;
+  height: 2.5rem;
+  aspect-ratio: 1/1;
+  padding: 8px;
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+
+  &:active {
+    img {
+      left: 0%;
+      transition: all 0.15s ease-in-out;
+      height: 85%;
+    }
+  }
+}
+
+.date-time {
+  transition: background-color 0.15s ease-in-out;
+}
