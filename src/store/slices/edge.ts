@@ -1,22 +1,22 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-type TerminalInitialState = {
+type EdgeInitialState = {
   isMaximized: boolean
   isActive: boolean
   isHidden: boolean
-  panelName: 'terminal'
+  panelName: 'edge'
 }
 
-const terminalInitialState: TerminalInitialState = {
+const edgeInitialState: EdgeInitialState = {
   isMaximized: false,
-  isActive: true,
-  isHidden: false,
-  panelName: 'terminal',
+  isActive: false,
+  isHidden: true,
+  panelName: 'edge',
 }
 
-const terminalSlice = createSlice({
-  name: 'terminalSlice',
-  initialState: terminalInitialState,
+const edgeSlice = createSlice({
+  name: 'edgeSlice',
+  initialState: edgeInitialState,
   reducers: {
     setMaximize: (state, action: PayloadAction<boolean>) => {
       state.isMaximized = action.payload
@@ -30,5 +30,5 @@ const terminalSlice = createSlice({
   },
 })
 
-export default terminalSlice.reducer
-export const terminalActions = terminalSlice.actions
+export default edgeSlice.reducer
+export const edgeActions = edgeSlice.actions

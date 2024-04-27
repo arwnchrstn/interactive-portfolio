@@ -1,12 +1,16 @@
 import '@styles/desktop.css'
 
-import Terminal from '@components//Panels/Terminal'
+import Edge from '@components/Panels/Edge'
+import Terminal from '@components/Panels/Terminal'
 import Taskbar from '@components/Taskbar'
 
 function Desktop() {
   return (
-    <div className="main-container h-dvh w-dvw desktop-bg relative overflow-hidden pb-14">
-      <Terminal />
+    <div className="flex flex-col desktop-bg h-dvh w-dvw">
+      <div className="main-container grow relative overflow-hidden">
+        <Edge />
+        <Terminal />
+      </div>
       <Taskbar />
     </div>
   )

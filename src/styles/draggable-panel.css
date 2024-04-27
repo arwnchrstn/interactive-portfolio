@@ -9,6 +9,18 @@
   height: 100%;
 }
 
+.msedge-input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 100%;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 4px;

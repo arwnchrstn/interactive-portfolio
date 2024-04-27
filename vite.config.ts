@@ -11,7 +11,6 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    css: true,
     setupFiles: './tests/setupTests.ts',
     include: ['./tests/**/*.test.{tsx,ts,js,jsx}'],
   },
@@ -23,5 +22,9 @@ export default defineConfig({
       '@utils': path.resolve(__dirname, './src/utils/'),
       '@store': path.resolve(__dirname, './src/store/'),
     },
+  },
+  server: {
+    port: 3000,
+    host: true,
   },
 })

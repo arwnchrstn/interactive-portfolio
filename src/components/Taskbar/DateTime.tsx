@@ -15,7 +15,7 @@ function DateTime() {
   }, [])
 
   return (
-    <div className="flex flex-col text-slate-300 text-xs cursor-default hover:bg-gray-600 p-2 rounded date-time cursor-pointer">
+    <div className="flex flex-col text-end text-slate-300 text-xs cursor-default hover:bg-gray-600 p-2 rounded date-time cursor-pointer">
       <p>{moment(time).format('hh:mm A')}</p>
       <p>{moment(Date.now()).format('M/D/YYYY')}</p>
     </div>
